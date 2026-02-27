@@ -1,0 +1,110 @@
+{
+  "mode": "quick",
+  "seed": 42,
+  "budget": 5000,
+  "comparisons": [
+    {
+      "scenario": "hub_easy",
+      "methods": [
+        "Random Search",
+        "MCMC (single chain)",
+        "Simulated Annealing",
+        "Parallel Tempering (M=4)"
+      ],
+      "best_costs": [
+        78.39487872826479,
+        3.144238569297841,
+        3.144238569297887,
+        3.1442385692972947
+      ],
+      "wall_times": [
+        0.22722779994364828,
+        0.4400327999610454,
+        0.21786910004448146,
+        0.5543200999964029
+      ],
+      "n_evaluations": [
+        5000,
+        5000,
+        5000,
+        5000
+      ]
+    },
+    {
+      "scenario": "chain_easy",
+      "methods": [
+        "Random Search",
+        "MCMC (single chain)",
+        "Simulated Annealing",
+        "Parallel Tempering (M=4)"
+      ],
+      "best_costs": [
+        0.6987196820661972,
+        0.6987196820661983,
+        0.6987196820661972,
+        0.6987196820661321
+      ],
+      "wall_times": [
+        0.04884740000125021,
+        0.3746842999244109,
+        0.23131579998880625,
+        0.3558853999711573
+      ],
+      "n_evaluations": [
+        5000,
+        5000,
+        5000,
+        5000
+      ]
+    },
+    {
+      "scenario": "multi_hub_mesh_easy",
+      "methods": [
+        "Random Search",
+        "MCMC (single chain)",
+        "Simulated Annealing",
+        "Parallel Tempering (M=4)"
+      ],
+      "best_costs": [
+        23173.353268395414,
+        8961.041105375032,
+        3113.9911053750457,
+        3291.5904652192553
+      ],
+      "wall_times": [
+        0.3145908999722451,
+        0.5725669000530615,
+        0.40343940001912415,
+        0.5315986999776214
+      ],
+      "n_evaluations": [
+        5000,
+        5000,
+        5000,
+        5000
+      ]
+    }
+  ],
+  "rankings": {
+    "Random Search": [
+      4,
+      2,
+      4
+    ],
+    "MCMC (single chain)": [
+      2,
+      4,
+      3
+    ],
+    "Simulated Annealing": [
+      3,
+      3,
+      1
+    ],
+    "Parallel Tempering (M=4)": [
+      1,
+      1,
+      2
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+# Konfiguracja dla benchmarków PESPlib
+# Dziedziczy z default.yaml
+
+defaults:
+  - default
+
+# Nadpisania dla benchmark
+network:
+  type: pesplib
+  # name: ustawiane przez CLI (--instance)
+
+mcmc:
+  n_steps: 500000
+  burn_in: 50000
+  thin: 100
+
+parallel_tempering:
+  enabled: true
+  n_replicas: 16
+  beta_min: 0.1
+  beta_max: 10.0
+  swap_interval: 10
+  
+  inertia:
+    IC: 20
+    Regional: 5
+    Local: 1
+
+diagnostics:
+  check_interval: 5000
+  r_hat_threshold: 1.05  # Bardziej rygorystyczny
+
+logging:
+  level: INFO
+  trace_interval: 1000
+
+output:
+  dir: results/benchmark/

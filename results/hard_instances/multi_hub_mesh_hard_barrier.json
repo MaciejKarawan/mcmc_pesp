@@ -1,0 +1,40 @@
+{
+  "scenario_name": "multi_hub_mesh_hard",
+  "points": [
+    {
+      "M_barrier": 1000.0,
+      "best_cost": 4739.0,
+      "mean_cost": 4739.0,
+      "violation_rate": 0.1086,
+      "acceptance_rate": 0.2684
+    },
+    {
+      "M_barrier": 10000.0,
+      "best_cost": 4703.0,
+      "mean_cost": 4703.0,
+      "violation_rate": 0.124,
+      "acceptance_rate": 0.28
+    },
+    {
+      "M_barrier": 100000.0,
+      "best_cost": 4703.0,
+      "mean_cost": 4703.0,
+      "violation_rate": 0.124,
+      "acceptance_rate": 0.28
+    },
+    {
+      "M_barrier": 1000000.0,
+      "best_cost": 4703.0,
+      "mean_cost": 4703.0,
+      "violation_rate": 0.124,
+      "acceptance_rate": 0.28
+    },
+    {
+      "M_barrier": 10000000.0,
+      "best_cost": 4703.0,
+      "mean_cost": 4703.0,
+      "violation_rate": 0.124,
+      "acceptance_rate": 0.28
+    }
+  ]
+}

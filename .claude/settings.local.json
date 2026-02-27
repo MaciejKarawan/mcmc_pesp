@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(python -m pytest:*)",
+      "Bash(python -m src.experiments.poc.triangle:*)",
+      "Bash(dir /b \"C:\\\\Users\\\\User\\\\Zeszyt\\\\pythonProject\\\\mcmc_pesp\\\\data\")",
+      "Bash(python -m src.experiments.benchmark.run_pesplib:*)",
+      "WebFetch(domain:num.math.uni-goettingen.de)",
+      "Bash(tar:*)",
+      "Bash(python -m src.experiments.benchmark.run_pesplib_raw --instance R1L1 --n_steps 100000 --beta 0.00001)",
+      "Bash(wc:*)",
+      "Bash(python:*)",
+      "Bash(set:*)",
+      "Bash(pytest:*)",
+      "Bash(dir:*)",
+      "Bash(PYTHONIOENCODING=utf-8 python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "prefersReducedMotion": false
+}

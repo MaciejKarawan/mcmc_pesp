@@ -1,0 +1,22 @@
+{
+  "scenario_name": "multi_hub_mesh_hard",
+  "n_steps": 2000,
+  "total_time_s": 0.24888400046620518,
+  "breakdown": [
+    {
+      "component": "Proposal",
+      "time_ms": 0.053773598454426974,
+      "percentage": 43.21177605125215
+    },
+    {
+      "component": "Cost Evaluation",
+      "time_ms": 0.06811975064920262,
+      "percentage": 54.7401604937255
+    },
+    {
+      "component": "Acceptance Decision",
+      "time_ms": 0.0025486511294730008,
+      "percentage": 2.048063455022349
+    }
+  ]
+}

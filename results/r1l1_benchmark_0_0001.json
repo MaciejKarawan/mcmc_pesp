@@ -1,0 +1,14 @@
+{
+  "instance": "R1L1",
+  "n_events": 3664,
+  "n_activities": 6385,
+  "n_steps": 1000000,
+  "beta": 0.0001,
+  "best_cost": 11297274435.0,
+  "objective": 813929916.0,
+  "feasible": false,
+  "n_violations": 2727,
+  "known_optimum": 29894745,
+  "lower_bound": 20230655,
+  "gap_percent": 2622.6521450509113
+}

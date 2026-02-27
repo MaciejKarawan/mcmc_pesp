@@ -1,0 +1,42 @@
+# Konfiguracja dla Proof of Concept
+# Dziedziczy z default.yaml
+
+defaults:
+  - default
+
+# Nadpisania dla PoC
+network:
+  type: synthetic
+  name: triangle
+
+mcmc:
+  n_steps: 50000
+  burn_in: 5000
+  
+  # Tylko proste propozycje na początek
+  proposals:
+    single_line:
+      weight: 0.7
+      sigma: 5.0
+    component:
+      weight: 0.2
+      sigma: 5.0
+      p_decay: 0.5
+    smart_repair:
+      weight: 0.1
+      sigma_small: 1.0
+    swap:
+      weight: 0.0  # Wyłączone
+
+parallel_tempering:
+  enabled: false
+
+diagnostics:
+  check_interval: 500
+
+logging:
+  level: DEBUG
+  trace_interval: 50
+
+output:
+  dir: results/poc/

@@ -1,0 +1,50 @@
+{
+  "instance": "mini",
+  "n_chains": 4,
+  "n_steps_per_chain": 50000,
+  "best_solution": {
+    "offsets": {
+      "L1_>": 13,
+      "L2_>": 22
+    },
+    "our_cost": 34.93598410330742,
+    "pesplib_objective": 27100.0
+  },
+  "diagnostics": {
+    "r_hat": Infinity,
+    "ess_total": 18000.0,
+    "ess_per_chain": [
+      4500.0,
+      4500.0,
+      4500.0,
+      4500.0
+    ],
+    "converged": false
+  },
+  "per_chain_results": [
+    {
+      "chain_id": 0,
+      "best_cost": 34.93598410331106,
+      "acceptance_rate": 0.23646,
+      "n_samples": 4500
+    },
+    {
+      "chain_id": 1,
+      "best_cost": 34.935984103309856,
+      "acceptance_rate": 0.23836,
+      "n_samples": 4500
+    },
+    {
+      "chain_id": 2,
+      "best_cost": 34.93598410330924,
+      "acceptance_rate": 0.23538,
+      "n_samples": 4500
+    },
+    {
+      "chain_id": 3,
+      "best_cost": 34.93598410330742,
+      "acceptance_rate": 0.23872,
+      "n_samples": 4500
+    }
+  ]
+}

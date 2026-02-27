@@ -1,0 +1,58 @@
+# Synthetic benchmark configuration for MCMC-PESP
+# Usage: python -m src.experiments.benchmark.run_synthetic_benchmark --config configs/synthetic_benchmark.yaml
+
+scenarios:
+  # Hub scenarios
+  - type: hub
+    difficulty: easy
+  - type: hub
+    difficulty: medium
+  - type: hub
+    difficulty: hard
+
+  # Chain scenarios
+  - type: chain
+    difficulty: easy
+  - type: chain
+    difficulty: medium
+
+  # Conflicting transfers (ring)
+  - type: conflicting
+    difficulty: easy
+  - type: conflicting
+    difficulty: medium
+
+  # Weighted transfers
+  - type: weighted
+    difficulty: medium
+    seed: 42
+
+  # Full cost (with turnarounds)
+  - type: full_cost
+    difficulty: easy
+
+  # Multi-hub mesh
+  - type: multi_hub_mesh
+    difficulty: easy
+  - type: multi_hub_mesh
+    difficulty: medium
+
+  # Random networks
+  - type: random_network
+    difficulty: medium
+    seed: 42
+  - type: random_network
+    difficulty: hard
+    seed: 123
+
+mcmc:
+  n_chains: 4
+  n_steps_per_chain: 20000
+  beta: 1.0
+  burn_in_fraction: 0.1
+  thin: 10
+  use_component_move: true
+  use_smart_repair: true
+  pax_weight: 1.0
+  ops_weight: 0.1
+  rob_weight: 0.05

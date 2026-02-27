@@ -1,0 +1,40 @@
+{
+  "scenario_name": "random_network_hard_seed42",
+  "points": [
+    {
+      "M_barrier": 1000.0,
+      "best_cost": 175342.478008083,
+      "mean_cost": 175342.478008083,
+      "violation_rate": 1.0,
+      "acceptance_rate": 0.3762
+    },
+    {
+      "M_barrier": 10000.0,
+      "best_cost": 106382.58725879331,
+      "mean_cost": 106382.58725879331,
+      "violation_rate": 1.0,
+      "acceptance_rate": 0.3716
+    },
+    {
+      "M_barrier": 100000.0,
+      "best_cost": 106382.58725881473,
+      "mean_cost": 106382.58725881473,
+      "violation_rate": 1.0,
+      "acceptance_rate": 0.3716
+    },
+    {
+      "M_barrier": 1000000.0,
+      "best_cost": 106382.58725877562,
+      "mean_cost": 106382.58725877562,
+      "violation_rate": 1.0,
+      "acceptance_rate": 0.3716
+    },
+    {
+      "M_barrier": 10000000.0,
+      "best_cost": 106382.58725783684,
+      "mean_cost": 106382.58725783684,
+      "violation_rate": 1.0,
+      "acceptance_rate": 0.3716
+    }
+  ]
+}

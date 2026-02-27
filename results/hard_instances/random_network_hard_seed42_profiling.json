@@ -1,0 +1,22 @@
+{
+  "scenario_name": "random_network_hard_seed42",
+  "n_steps": 2000,
+  "total_time_s": 0.5301685006124899,
+  "breakdown": [
+    {
+      "component": "Proposal",
+      "time_ms": 0.059017249557655305,
+      "percentage": 22.263582045887002
+    },
+    {
+      "component": "Cost Evaluation",
+      "time_ms": 0.20310649904422462,
+      "percentage": 76.6196025639324
+    },
+    {
+      "component": "Acceptance Decision",
+      "time_ms": 0.002960501704365015,
+      "percentage": 1.1168153901806028
+    }
+  ]
+}

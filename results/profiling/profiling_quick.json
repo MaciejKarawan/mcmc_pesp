@@ -1,0 +1,183 @@
+{
+  "mode": "quick",
+  "seed": 42,
+  "profiling": [
+    {
+      "scenario": "hub_easy",
+      "total_time_s": 0.17489159933757037,
+      "breakdown": [
+        {
+          "component": "Proposal",
+          "time_ms": 0.13085299998056144,
+          "percentage": 74.81948845810085
+        },
+        {
+          "component": "Cost Evaluation",
+          "time_ms": 0.03698639979120344,
+          "percentage": 21.148185465336976
+        },
+        {
+          "component": "Acceptance Decision",
+          "time_ms": 0.007052199565805495,
+          "percentage": 4.032326076562177
+        }
+      ]
+    },
+    {
+      "scenario": "hub_hard",
+      "total_time_s": 0.2316773000638932,
+      "breakdown": [
+        {
+          "component": "Proposal",
+          "time_ms": 0.12043199979234487,
+          "percentage": 51.98264990101814
+        },
+        {
+          "component": "Cost Evaluation",
+          "time_ms": 0.10505780042149127,
+          "percentage": 45.34660944016434
+        },
+        {
+          "component": "Acceptance Decision",
+          "time_ms": 0.0061874998500570655,
+          "percentage": 2.6707406588175204
+        }
+      ]
+    },
+    {
+      "scenario": "multi_hub_mesh_easy",
+      "total_time_s": 0.14198529964778572,
+      "breakdown": [
+        {
+          "component": "Proposal",
+          "time_ms": 0.08042420051060617,
+          "percentage": 56.6426247717965
+        },
+        {
+          "component": "Cost Evaluation",
+          "time_ms": 0.05737290077377111,
+          "percentage": 40.407634393203075
+        },
+        {
+          "component": "Acceptance Decision",
+          "time_ms": 0.004188198363408446,
+          "percentage": 2.9497408350004224
+        }
+      ]
+    },
+    {
+      "scenario": "multi_hub_mesh_medium",
+      "total_time_s": 0.20829000149387866,
+      "breakdown": [
+        {
+          "component": "Proposal",
+          "time_ms": 0.10801049880683422,
+          "percentage": 51.85582506705608
+        },
+        {
+          "component": "Cost Evaluation",
+          "time_ms": 0.09398510155733675,
+          "percentage": 45.12223384860787
+        },
+        {
+          "component": "Acceptance Decision",
+          "time_ms": 0.006294401129707694,
+          "percentage": 3.021941084336051
+        }
+      ]
+    },
+    {
+      "scenario": "random_network_medium_seed42",
+      "total_time_s": 0.171784199308604,
+      "breakdown": [
+        {
+          "component": "Proposal",
+          "time_ms": 0.06058970117010176,
+          "percentage": 35.27082316881461
+        },
+        {
+          "component": "Cost Evaluation",
+          "time_ms": 0.10815369803458452,
+          "percentage": 62.95904889383358
+        },
+        {
+          "component": "Acceptance Decision",
+          "time_ms": 0.003040800103917718,
+          "percentage": 1.7701279373518124
+        }
+      ]
+    }
+  ],
+  "scaling": [
+    {
+      "scenario": "hub_easy",
+      "n_lines": 6,
+      "n_transfers": 9,
+      "time_per_step_ms": 0.13780339993536472
+    },
+    {
+      "scenario": "hub_medium",
+      "n_lines": 8,
+      "n_transfers": 16,
+      "time_per_step_ms": 0.10103120002895594
+    },
+    {
+      "scenario": "hub_hard",
+      "n_lines": 12,
+      "n_transfers": 36,
+      "time_per_step_ms": 0.15895979991182685
+    },
+    {
+      "scenario": "chain_easy",
+      "n_lines": 3,
+      "n_transfers": 2,
+      "time_per_step_ms": 0.06257160007953644
+    },
+    {
+      "scenario": "chain_hard",
+      "n_lines": 8,
+      "n_transfers": 7,
+      "time_per_step_ms": 0.06917380006052554
+    },
+    {
+      "scenario": "multi_hub_mesh_easy",
+      "n_lines": 12,
+      "n_transfers": 16,
+      "time_per_step_ms": 0.12188760004937649
+    },
+    {
+      "scenario": "multi_hub_mesh_medium",
+      "n_lines": 18,
+      "n_transfers": 25,
+      "time_per_step_ms": 0.11421580007299781
+    },
+    {
+      "scenario": "random_network_easy_seed42",
+      "n_lines": 6,
+      "n_transfers": 9,
+      "time_per_step_ms": 0.07738600019365549
+    },
+    {
+      "scenario": "random_network_medium_seed42",
+      "n_lines": 12,
+      "n_transfers": 38,
+      "time_per_step_ms": 0.15964399999938905
+    },
+    {
+      "scenario": "random_network_hard_seed42",
+      "n_lines": 20,
+      "n_transfers": 82,
+      "time_per_step_ms": 0.33931459998711944
+    }
+  ],
+  "average_breakdown": {
+    "Proposal": 54.11428227335724,
+    "Cost Evaluation": 42.99674240822917,
+    "Acceptance Decision": 2.888975318413597
+  },
+  "linear_fit": {
+    "slope": 0.003238385085624721,
+    "intercept": 0.056477537976881445,
+    "r_squared": 0.9208026187396708
+  }
+}

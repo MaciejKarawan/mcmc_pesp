@@ -1,0 +1,152 @@
+{
+  "mode": "full",
+  "seed": 42,
+  "n_chains": 4,
+  "convergence": {
+    "hub_easy": {
+      "r_hat": 1.0029232322153216,
+      "ess_total": 699.9041701641858,
+      "converged": true,
+      "steps_to_convergence": 16000,
+      "total_steps": 50000
+    },
+    "hub_hard": {
+      "r_hat": 1.0051921859527226,
+      "ess_total": 326.0878791631074,
+      "converged": true,
+      "steps_to_convergence": 42000,
+      "total_steps": 50000
+    },
+    "chain_medium": {
+      "r_hat": 1.0005611236675611,
+      "ess_total": 1911.1187738776907,
+      "converged": true,
+      "steps_to_convergence": 10000,
+      "total_steps": 50000
+    },
+    "conflicting_easy": {
+      "r_hat": 1.0011604346259892,
+      "ess_total": 2600.086532570328,
+      "converged": true,
+      "steps_to_convergence": 6000,
+      "total_steps": 50000
+    },
+    "multi_hub_mesh_easy": {
+      "r_hat": 10492.22034366354,
+      "ess_total": 569.7399288967486,
+      "converged": false,
+      "steps_to_convergence": null,
+      "total_steps": 50000
+    }
+  },
+  "proposals": [
+    {
+      "name": "single_line_shift",
+      "acceptance_rate": 0.175475,
+      "best_cost": 3200.0404652160664,
+      "ess_per_step": 0.006085820236788044
+    },
+    {
+      "name": "uniform_line_shift",
+      "acceptance_rate": 0.142425,
+      "best_cost": 3113.99110537502,
+      "ess_per_step": 0.007146926967556497
+    },
+    {
+      "name": "component_move",
+      "acceptance_rate": 0.5305500000000001,
+      "best_cost": 3113.991105375082,
+      "ess_per_step": 0.0019063757500827408
+    },
+    {
+      "name": "smart_repair",
+      "acceptance_rate": 0.07445,
+      "best_cost": 3184.041105375044,
+      "ess_per_step": 0.03860488279168017
+    },
+    {
+      "name": "full_mix",
+      "acceptance_rate": 0.262675,
+      "best_cost": 3113.991105374971,
+      "ess_per_step": 0.010448330478016432
+    }
+  ],
+  "pt": [
+    {
+      "n_replicas": 1,
+      "use_inertia": false,
+      "best_cost": 3113.991105375057,
+      "swap_rates": []
+    },
+    {
+      "n_replicas": 4,
+      "use_inertia": false,
+      "best_cost": 3113.991105364805,
+      "swap_rates": [
+        0.008,
+        0.005333333333333333,
+        0.19066666666666668
+      ]
+    },
+    {
+      "n_replicas": 8,
+      "use_inertia": false,
+      "best_cost": 3140.491105346963,
+      "swap_rates": [
+        0.07466666666666667,
+        0.04,
+        0.037333333333333336,
+        0.04,
+        0.34933333333333333,
+        0.38133333333333336,
+        0.14133333333333334
+      ]
+    },
+    {
+      "n_replicas": 4,
+      "use_inertia": true,
+      "best_cost": 3113.991105383656,
+      "swap_rates": [
+        0.008,
+        0.068,
+        0.008
+      ]
+    },
+    {
+      "n_replicas": 8,
+      "use_inertia": true,
+      "best_cost": 3120.041105338743,
+      "swap_rates": [
+        0.037333333333333336,
+        0.024,
+        0.042666666666666665,
+        0.3413333333333333,
+        0.18666666666666668,
+        0.304,
+        0.024
+      ]
+    }
+  ],
+  "gap": {
+    "hub_easy": {
+      "optimal_cost": 3.144238569297887,
+      "final_gap": -2.7400372081228652e-14,
+      "final_best_cost": 3.144238569297801
+    },
+    "hub_medium": {
+      "optimal_cost": 5.589757456529579,
+      "final_gap": -2.049731442416653e-13,
+      "final_best_cost": 5.589757456528433
+    },
+    "chain_easy": {
+      "optimal_cost": 0.6987196820661972,
+      "final_gap": 1.2711512821188549e-14,
+      "final_best_cost": 0.698719682066206
+    },
+    "chain_medium": {
+      "optimal_cost": 1.3974393641323943,
+      "final_gap": -7.563350128607187e-14,
+      "final_best_cost": 1.3974393641322886
+    }
+  }
+}

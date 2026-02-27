@@ -1,0 +1,179 @@
+{
+  "scenario_name": "multi_hub_mesh_hard",
+  "points": [
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 0.1,
+      "lambda_rob": 0.01,
+      "best_cost": 4703.059658694067,
+      "cost_pax": 4703.0,
+      "cost_ops": 0.0,
+      "cost_rob": 5.96585818843192,
+      "acceptance_rate": 0.2806
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 0.1,
+      "lambda_rob": 0.1,
+      "best_cost": 4703.596585930528,
+      "cost_pax": 4703.0,
+      "cost_ops": 0.0,
+      "cost_rob": 5.96585818843192,
+      "acceptance_rate": 0.2814
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 0.1,
+      "lambda_rob": 1.0,
+      "best_cost": 33322.470801938165,
+      "cost_pax": 33259.0,
+      "cost_ops": 0.0,
+      "cost_rob": 63.47080192069476,
+      "acceptance_rate": 0.284
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 1.0,
+      "lambda_rob": 0.01,
+      "best_cost": 4703.059658694067,
+      "cost_pax": 4703.0,
+      "cost_ops": 0.0,
+      "cost_rob": 5.96585818843192,
+      "acceptance_rate": 0.2806
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 1.0,
+      "lambda_rob": 0.1,
+      "best_cost": 4703.596585930528,
+      "cost_pax": 4703.0,
+      "cost_ops": 0.0,
+      "cost_rob": 5.96585818843192,
+      "acceptance_rate": 0.2814
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 1.0,
+      "lambda_rob": 1.0,
+      "best_cost": 33322.470801938165,
+      "cost_pax": 33259.0,
+      "cost_ops": 0.0,
+      "cost_rob": 63.47080192069476,
+      "acceptance_rate": 0.284
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 10.0,
+      "lambda_rob": 0.01,
+      "best_cost": 4703.059658694067,
+      "cost_pax": 4703.0,
+      "cost_ops": 0.0,
+      "cost_rob": 5.96585818843192,
+      "acceptance_rate": 0.2806
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 10.0,
+      "lambda_rob": 0.1,
+      "best_cost": 4703.596585930528,
+      "cost_pax": 4703.0,
+      "cost_ops": 0.0,
+      "cost_rob": 5.96585818843192,
+      "acceptance_rate": 0.2814
+    },
+    {
+      "lambda_pax": 1.0,
+      "lambda_ops": 10.0,
+      "lambda_rob": 1.0,
+      "best_cost": 33322.470801938165,
+      "cost_pax": 33259.0,
+      "cost_ops": 0.0,
+      "cost_rob": 63.47080192069476,
+      "acceptance_rate": 0.284
+    }
+  ],
+  "pareto_pax_ops": {
+    "points": [
+      [
+        4703.0,
+        0.0
+      ],
+      [
+        4703.0,
+        0.0
+      ],
+      [
+        4703.0,
+        0.0
+      ],
+      [
+        4703.0,
+        0.0
+      ],
+      [
+        4703.0,
+        0.0
+      ],
+      [
+        4703.0,
+        0.0
+      ]
+    ],
+    "dominated": [
+      [
+        33259.0,
+        0.0
+      ],
+      [
+        33259.0,
+        0.0
+      ],
+      [
+        33259.0,
+        0.0
+      ]
+    ]
+  },
+  "pareto_pax_rob": {
+    "points": [
+      [
+        4703.0,
+        5.96585818843192
+      ],
+      [
+        4703.0,
+        5.96585818843192
+      ],
+      [
+        4703.0,
+        5.96585818843192
+      ],
+      [
+        4703.0,
+        5.96585818843192
+      ],
+      [
+        4703.0,
+        5.96585818843192
+      ],
+      [
+        4703.0,
+        5.96585818843192
+      ]
+    ],
+    "dominated": [
+      [
+        33259.0,
+        63.47080192069476
+      ],
+      [
+        33259.0,
+        63.47080192069476
+      ],
+      [
+        33259.0,
+        63.47080192069476
+      ]
+    ]
+  }
+}

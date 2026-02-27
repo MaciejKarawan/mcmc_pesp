@@ -1,0 +1,11 @@
+# event-id; type; stop-id; line-id; passengers; direction
+1; "departure"; 0; 1; 100; ">"
+2; "departure"; 1; 1; 100; ">"
+3; "arrival"; 1; 1; 100; ">"
+4; "departure"; 2; 1; 100; ">"
+5; "arrival"; 2; 1; 100; ">"
+6; "departure"; 1; 2; 100; ">"
+7; "departure"; 2; 2; 100; ">"
+8; "arrival"; 2; 2; 100; ">"
+9; "departure"; 3; 2; 100; ">"
+10; "arrival"; 3; 2; 100; ">"

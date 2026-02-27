@@ -1,0 +1,100 @@
+# Domyślna konfiguracja MCMC-PESP
+
+# Sieć
+network:
+  period: 1440  # T_PERIOD: common scheduling period (minutes in a day)
+
+# Funkcja kosztu
+cost:
+  # Bariera
+  barrier:
+    M_safety: 1.0e6        # Dla przesiadek
+    M_critical: 1.0e7      # Dla obrotów
+    epsilon_tol: 0.5       # Tolerancja naruszenia (minuty)
+  
+  # Wagi komponentów
+  weights:
+    pax: 1.0               # Koszt pasażerski
+    ops: 1.0               # Koszt operacyjny
+    rob: 0.1               # Robustność
+    fleet: 0.5             # Proxy floty
+  
+  # Parametry przesiadek (domyślne)
+  transfer:
+    default:
+      w_min: 3
+      w_ideal: 8
+      w_max: 30
+      alpha: 2.0           # Kara za zbyt krótkie
+      beta: 0.5            # Kara za zbyt długie
+  
+  # CVaR
+  robustness:
+    alpha: 0.95            # Poziom ufności
+    delay_lambda: 0.1      # Parametr rozkładu wykładniczego (1/średnie opóźnienie)
+
+# MCMC
+mcmc:
+  # Podstawowe
+  n_steps: 100000
+  burn_in: 10000
+  thin: 10
+  
+  # Temperatura
+  beta: 1.0                # Dla pojedynczego łańcucha
+  
+  # Propozycje
+  proposals:
+    single_line:
+      weight: 0.4
+      sigma: 5.0           # Odchylenie standardowe przesunięcia
+    component:
+      weight: 0.3
+      sigma: 5.0
+      p_decay: 0.3         # Parametr zaniku BFS
+    smart_repair:
+      weight: 0.2
+      sigma_small: 1.0     # Mały szum po naprawie
+    swap:
+      weight: 0.1
+  
+  # Adaptacja
+  adaptation:
+    enabled: true
+    target_acceptance: 0.234
+    update_interval: 1000
+    learning_rate: 0.01
+
+# Parallel Tempering
+parallel_tempering:
+  enabled: false
+  n_replicas: 8
+  beta_min: 0.1
+  beta_max: 10.0
+  swap_interval: 10
+  
+  # Inercja (null = brak inercji)
+  inertia:
+    IC: 20
+    Regional: 5
+    Local: 1
+
+# Diagnostyka
+diagnostics:
+  check_interval: 1000     # Co ile kroków sprawdzać
+  r_hat_threshold: 1.1     # Próg zbieżności
+  min_ess: 100             # Minimalna efektywna wielkość próby
+
+# Logowanie
+logging:
+  level: INFO
+  save_trace: true
+  trace_interval: 100      # Co ile kroków zapisywać
+  save_best: true
+
+# Output
+output:
+  dir: results/
+  save_schedule: true
+  save_metrics: true
+  save_plots: true
