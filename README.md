@@ -13,8 +13,8 @@ Implementacja algorytmu MCMC (Markov Chain Monte Carlo) do rozwiązywania proble
 ## Instalacja
 
 ```bash
-git clone <repo>
-cd mcmc-pesp
+git clone https://github.com/MaciejKarawan/mcmc_pesp.git
+cd mcmc_pesp
 pip install -r requirements.txt
 ```
 
