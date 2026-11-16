@@ -13,8 +13,8 @@ Implementacja algorytmu MCMC (Markov Chain Monte Carlo) do rozwiązywania proble
 ## Instalacja
 
 ```bash
-git clone <repo>
-cd mcmc-pesp
+git clone https://github.com/MaciejKarawan/mcmc_pesp.git
+cd mcmc_pesp
 pip install -r requirements.txt
 ```
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 python -m src.experiments.poc.triangle
 
 # Benchmark na PESPlib
-python -m src.experiments.benchmark.run --instance small
+python -m src.experiments.benchmark.run_synthetic_benchmark --help
 ```
 
 ## Dokumentacja
@@ -55,3 +55,7 @@ mcmc-pesp/
 ## Licencja
 
 MIT
+
+## Organization and checks
+
+See [organization](docs/organization.md). Run `python -m pytest tests -q -p no:cacheprovider` from the root. The synthetic benchmark command above displays available arguments; choose explicit settings before running a benchmark. Do not infer formal MCMC compliance solely from passing tests. The established src API is retained; the generic package name is not changed by this housekeeping.
